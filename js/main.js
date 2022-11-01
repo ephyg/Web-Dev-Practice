@@ -1,18 +1,18 @@
 // Mobile Navigation Bar
-var SideBar = document.querySelector("#side-nav")
+var Side_Bar = document.querySelector("#side-nav")
 var Navbutton=document.querySelector(".fas")
 var ButtonBar = document.querySelector("#btn")
-SideBar.classList.remove('active-side-nav')
+Side_Bar.classList.remove('active-side-nav')
 ButtonBar.addEventListener('click', function () {
-    if (SideBar.classList.contains('active-side-nav')) {
-        SideBar.classList.remove('active-side-nav')
-        SideBar.classList.add('inactive-side-nav')
+    if (Side_Bar.classList.contains('active-side-nav')) {
+        Side_Bar.classList.remove('active-side-nav')
+        Side_Bar.classList.add('inactive-side-nav')
         Navbutton.classList.add('fa-bars')
         Navbutton.classList.remove('fa-xmark')
     }
     else {
-        SideBar.classList.add('active-side-nav')
-        SideBar.classList.remove('inactive-side-nav')
+        Side_Bar.classList.add('active-side-nav')
+        Side_Bar.classList.remove('inactive-side-nav')
         Navbutton.classList.remove('fa-bars')
         Navbutton.classList.add('fa-xmark')
         
